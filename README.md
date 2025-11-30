@@ -5,7 +5,8 @@ different systems.
 
 # Linux
 
-Coming soon...
+I used the standard xkb file to do my remaps. It is exposed as a nixosModule in
+this flake.
 
 # Mac
 
