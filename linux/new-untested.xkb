@@ -1,0 +1,129 @@
+// This is still needed for it: XKB_DEFAULT_OPTIONS="grp:alt_shift_toggle ctrl:nocaps"
+xkb_symbols "basic" {
+    include "hu(basic)"
+
+    // " → output changed from - to /
+    // (Mac keycode 19 → "/")
+    key <AE02> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ 2, quotedbl, slash ]
+    };
+
+    // $ stayed the same
+    key <AE04> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ 4, exclam, dollar ]
+    };
+
+    // * moved from key 14 → now key AE05 must output "*"
+    key <AE05> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ 5, percent, asterisk ]
+    };
+
+    // slash stayed slash
+    key <AE06> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ 6, slash, slash ]
+    };
+
+    // keycode 14 → "*"
+    // Already mapped above (AE05)
+
+    // keycode 15 → "{"
+    key <AD03> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ e, E, braceleft ]
+    };
+
+    // keycode 17 → "}"
+    key <AD04> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ r, R, braceright ]
+    };
+
+    // keycode 23 → "`"
+    key <AE12> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ equal, plus, grave ]
+    };
+
+    // keycode 31 → "🍑"
+    key <AC07> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ j, J, "🍑" ]
+    };
+
+    // keycode 32 → "🖕"
+    key <AC08> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ k, K, "🖕" ]
+    };
+
+    // keycode 34 → "🫦"
+    key <AC10> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ semicolon, colon, "🫦" ]
+    };
+
+    // keycode 35 → "🍆"
+    key <AC11> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ apostrophe, quotedbl, "🍆" ]
+    };
+
+    // keycode 37 → "😂"
+    key <AD01> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ q, Q, "😂" ]
+    };
+
+    // keycode 38 → "👍"
+    key <AD02> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ w, W, "👍" ]
+    };
+
+    // keycode 39 → "✅"
+    key <AD03> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ e, E, "✅" ]
+    };
+
+    // keycode 40 → "😅"
+    key <AD04> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ r, R, "😅" ]
+    };
+
+    // keycode 41 → "❤️"
+    key <AD05> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ t, T, "❤️" ]
+    };
+
+    // keycode 42 → "❎"
+    key <AD06> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ y, Y, "❎" ]
+    };
+
+    // keycode 43 → "😎"
+    key <AD07> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ u, U, "😎" ]
+    };
+
+    // keycode 46 → "😎"
+    key <AD09> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ o, O, "😎" ]
+    };
+
+    // keycode 47 → ";"
+    key <AC03> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [ d, D, semicolon ]
+    };
+};
+

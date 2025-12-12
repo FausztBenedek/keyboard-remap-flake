@@ -1,4 +1,3 @@
-
 ; #InstallKeybdHook
 ; #Persistent
 ; KeyHistory
@@ -14,13 +13,15 @@ $<^>!4::Send, $
 ; AltGr + 5 → *
 $<^>!5::Send, *
 
-; AltGr + E → {
-$<^>!e::SendRaw, {
+; AltGr + E → *
+$<^>!e::SendRaw, *
 
-; AltGr + R → }
-$<^>!r::SendRaw, }
+; AltGr + R → {
+$<^>!r::SendRaw, {
+
+; AltGr + t → }
+$<^>!t::SendRaw, }
 
 ; AltGr + D → ;
 $<^>!d::SendRaw,;
-
 
