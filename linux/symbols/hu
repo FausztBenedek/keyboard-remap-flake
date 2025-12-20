@@ -1,0 +1,51 @@
+xkb_symbols "custom" {
+    include "hu(basic)"
+
+    // AltGr + 2 → -
+    key <AE02> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      2,        quotedbl,        slash,        slash]
+    };
+
+    // AltGr + 4 → $
+    key <AE04> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      4,        exclam,      dollar,        dollar]
+    };
+
+    // AltGr + 5 → *
+    key <AE05> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      5,        percent,          asterisk,        asterisk]
+    };
+
+    // AltGr + 6 → /
+    key <AE06> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      6,        slash,          slash,        slash]
+    };
+
+    // AltGr + E → *
+    key <AD03> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      e,        E,               asterisk,        asterisk]
+    };
+
+    // AltGr + R → {
+    key <AD04> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      r,        R,               braceleft,        braceleft]
+    };
+
+    // AltGr + T → }
+    key <AD05> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      t,        T,               braceright,        braceright]
+    };
+
+    // AltGr + D → ;
+    key <AC03> {
+        type[Group1] = "FOUR_LEVEL",
+        symbols[Group1] = [      d,        D,               semicolon,        semicolon] 
+    };
+};
