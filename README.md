@@ -8,6 +8,26 @@ different systems.
 I used the standard xkb file to do my remaps. It is exposed as a nixosModule in
 this flake.
 
+To iterate on the xkb file under hyprland, link the xkb to the local config file
+
+```
+ln -s $(pwd)/linux/xkb ~/.config/xkb
+```
+
+And then change the hyprland config to use:
+
+```
+intput {
+    kb_layout = custom
+}
+```
+
+Information about the keysymbols is
+[here](https://gist.github.com/matoken/5c2b9d2f0b92c21452cf8b4f01f7e149).
+
+To find out the keycodes I use `xev`.
+And the grep the keycode: `xkbcomp -xkb $DISPLAY - | grep '<.*> = 40'`
+
 # Mac
 
 On mac I created my keylayout file with
