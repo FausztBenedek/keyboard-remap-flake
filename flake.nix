@@ -8,7 +8,6 @@
   outputs = { self, ... }:
     {
       nixosModules.default = { config, ... }: {
-        services.xserver.enable = false;
         services.xserver.xkb = {
           layout = "hu";
           extraLayouts.hu-custom = {
