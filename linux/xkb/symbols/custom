@@ -1,6 +1,6 @@
 default partial alphanumeric_keys
 xkb_symbols "basic" {
-    include "hu(basic)"
+    include "hu"
 
     // AltGr + 2 → /
     key <AE02> {
