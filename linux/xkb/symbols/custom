@@ -1,5 +1,5 @@
 default partial alphanumeric_keys
-xkb_symbols "hu-custom" {
+xkb_symbols "basic" {
     include "hu(basic)"
 
     // AltGr + 2 → /
