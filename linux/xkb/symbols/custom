@@ -1,4 +1,4 @@
-xkb_symbols "basic" {
+xkb_symbols "hu-custom" {
     include "hu(basic)"
 
     // AltGr + 2 → /
