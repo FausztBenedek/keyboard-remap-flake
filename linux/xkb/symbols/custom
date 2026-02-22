@@ -48,59 +48,15 @@ xkb_symbols "basic" {
         type[Group1] = "FOUR_LEVEL",
         symbols[Group1] = [      d,        D,               semicolon,        semicolon] 
     };
+    key <AD07> { [ u, U, U0001F595, U0001F595 ] };  // 🖕
+    key <AD08> { [ i, I, U0001FAE6, U0001FAE6 ] };  // 🫦
+    key <AD09> { [ o, O, U0001F351, U0001F351 ] };  // 🍑
+    key <AD10> { [ p, P, U0001F346, U0001F346 ] };  // 🍆
 
-    // AltGr + U → 🖕
-    key <AD07> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      u,        U,               "🖕",        "🖕"] 
-    };
+    key <AC07> { [ j, J, U0001F44D, U0001F44D ] };  // 👍
+    key <AC08> { [ k, K, U0001F605, U0001F605 ] };  // 😅
+    key <AC09> { [ l, L, U0001F602, U0001F602 ] };  // 😂
+    key <AC10> { [ eacute, Eacute, U00002764, U00002764 ] }; // ♥
 
-    // AltGr + I → 🫦
-    key <AD08> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      i,        I,               "🫦",        "🫦"] 
-    };
-
-    // AltGr + O → 🍑
-    key <AD09> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      o,        O,               "🍑",        "🍑"] 
-    };
-
-    // AltGr + P → 🍆
-    key <AD10> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      p,        P,               "🍆",        "🍆"] 
-    };
-
-    // AltGr + J → 👍
-    key <AC07> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      j,        J,               "👍",        "👍"] 
-    };
-
-    // AltGr + K → 😅
-    key <AC08> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      k,        K,               "😅",        "😅"] 
-    };
-
-    // AltGr + L → 😂
-    key <AC09> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      l,        L,               "😂",        "😂"] 
-    };
-
-
-    // AltGr + L → ❤️
-    key <AC10> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      "é",        "É",               "❤️",        "❤️"] 
-    };
-
-    // AltGr + M → 😎
-    key <AB07> {
-        type[Group1] = "FOUR_LEVEL",
-        symbols[Group1] = [      m,        M,               "😎",        "😎"] 
-    };
+    key <AB07> { [ m, M, U0001F60E, U0001F60E ] };  // 😎
 };
