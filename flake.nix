@@ -9,7 +9,7 @@
     {
       nixosModules.default = { config, ... }: {
         services.xserver.xkb = {
-          layout = "hu";
+          layout = "hu-custom";
           extraLayouts.hu-custom = {
             languages = [ "hu" ];
             description = "HU with remaps";
