@@ -28,6 +28,12 @@ Information about the keysymbols is
 To find out the keycodes I use `xev`.
 And the grep the keycode: `xkbcomp -xkb $DISPLAY - | grep '<.*> = 40'`
 
+To set it for testing it out
+```
+setxkbmap -I$HOME/.config/xkb custom -print |
+xkbcomp -I$HOME/.config/xkb - $DISPLAY
+```
+
 # Mac
 
 On mac I created my keylayout file with
