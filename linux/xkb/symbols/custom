@@ -1,6 +1,10 @@
 xkb_symbols "basic" {
     include "hu(basic)"
 
+    // Swap Escape and Caps Lock
+    key <ESC>  { [ Caps_Lock ] };
+    key <CAPS> { [ Escape ] };
+
     // AltGr + 2 → /
     key <AE02> {
         type[Group1] = "FOUR_LEVEL",
